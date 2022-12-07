@@ -1,12 +1,27 @@
 @import './base.css';
 
 
-
+.text-tittle-container{
+  display: flex;
+  color: var(--font-links-bar);
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+    
+  
+}
+.tittle-1{
+  font-size: 4rem;
+}
+.tittle-2{
+  font-size: 1.5rem;
+}
 
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    
   }
 }
 
