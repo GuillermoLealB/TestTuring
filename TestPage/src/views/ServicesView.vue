@@ -39,8 +39,11 @@
   height: 40rem;
   overflow: hidden;
 }
-.container-secction-2{
-    display: flex;
+.container-secction-2 {
+  display: flex;
+  padding: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
 }
 .text-1 {
   font-size: 1.5rem;
@@ -56,5 +59,7 @@
 
 .img-secction-1 {
   height: 20rem;
+  width: 100%;
+ 
 }
 </style>

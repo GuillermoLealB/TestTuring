@@ -1,6 +1,6 @@
 <script setup>
-  import ClientStories from '../components/ClientStories.vue'
-  import HelloWorld from '../components/HelloWorld.vue'
+  import InformationHome from '../components/InformationHome.vue'
+  import SliceHome from '../components/SliceHome.vue'
 </script>
 
 <template>
@@ -21,11 +21,11 @@
   </div>
   </section>
   <section>
-    <ClientStories/>
+    <InformationHome/>
   </section>
   <section>
     <div class="swiper-home">
-      <HelloWorld />
+      <SliceHome />
     </div>
   </section>
 </template>
@@ -41,6 +41,8 @@
  height: 40rem;
  overflow: hidden;
 }
+
+
 
 .home-section--1{
   padding: 4rem 1rem;
@@ -64,8 +66,13 @@
   margin: auto;
   width: 55%;
 
+
 }
 .swiper-home{
-  height: 500px;
+  height:100% ;
 }
+
+
+
+
 </style>

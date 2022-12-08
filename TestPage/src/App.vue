@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+import FooterPage from "./components/FooterPage.vue";
 </script>
 
 <template>
@@ -13,24 +14,26 @@ import { RouterLink, RouterView } from "vue-router";
 
   </header> -->
 
-    <nav class="navbar navbar-expand-lg fixed-top ">
-      <div class="container-nav">
-        <div>
+  <nav class="navbar navbar-expand-lg fixed-top ">
+    <div class="container-nav">
+      <div>
         <a class="navbar-brand" href="#"> <b>TURING-IA</b> </a>
       </div>
       <div class="navbar-dark">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-          <!-- class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-expanded="true" aria-label="Toggle navigation" -->    
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <!-- class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-expanded="true" aria-label="Toggle navigation" -->
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasExampleLabel">MENU</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
           <ul class="navbar-nav">
             <li class="nav-item" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-              <RouterLink   to="/" class="nav-link" aria-current="page"  >Inicio</RouterLink>
+              <RouterLink to="/" class="nav-link" aria-current="page">Inicio</RouterLink>
             </li>
             <li class="nav-item" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
               <RouterLink class="nav-link" to="/about">Nosotros</RouterLink>
@@ -38,19 +41,15 @@ import { RouterLink, RouterView } from "vue-router";
             <li class="nav-item" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
               <RouterLink class="nav-link" to="/services">Servicios</RouterLink>
             </li>
-            <li class="nav-item dropdown" >
-              <div class="btn-group twonav" >
-                <div  type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-                <RouterLink class="nav-link" to="/tableau">
-                  Tableau
-                </RouterLink>
-              </div>
-                <div
-                  role="button"
-                  class="nav-link dropdown-toggle dropdown-toggle-split"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+            <li class="nav-item dropdown">
+              <div class="btn-group twonav">
+                <div type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <RouterLink class="nav-link" to="/tableau">
+                    Tableau
+                  </RouterLink>
+                </div>
+                <div role="button" class="nav-link dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   <span class="visually-hidden">Toggle Dropdown</span>
                 </div>
                 <ul class="dropdown-menu">
@@ -63,58 +62,54 @@ import { RouterLink, RouterView } from "vue-router";
               </div>
             </li>
             <li class="nav-item" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="https://www.turing-ia.com/portal/"
-                >Portal</a
-              >
+              <a class="nav-link" aria-current="page" href="https://www.turing-ia.com/portal/">Portal</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
- </nav>
-
- 
-    <RouterView class="viwes"/>
+  </nav>
 
 
+  <RouterView class="viwes" />
+
+  <FooterPage />
 </template>
 
 <style scoped>
-.navbar{
+.navbar {
   display: block;
 }
-.navbar-brand{
+
+.navbar-brand {
   color: var(--font-links-bar);
   font-size: 2rem;
 }
 
-.nav-item{
+.nav-item {
   padding: 1.5rem;
   font-size: 1.2rem;
   padding: 0 2%;
   text-align: center;
 }
-.nav-link{
+
+.nav-link {
   color: var(--font-links-bar);
 }
-.container-nav{
+
+.container-nav {
   display: flex;
   justify-content: space-around;
 
 
- 
-}
-.collapse{
 
 }
-.viwes{
+
+.collapse {}
+
+.viwes {
   z-index: 1;
 }
-.twonav:hover {
 
-}
-
+.twonav:hover {}
 </style>

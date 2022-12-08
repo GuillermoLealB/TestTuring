@@ -11,20 +11,32 @@
     
   
 }
+
+
 .tittle-1{
   font-size: 4rem;
 }
 .tittle-2{
   font-size: 1.5rem;
 }
-
-
-@media (hover: hover) {
-  a:hover {
-    
-  }
+.tittle-1, .tittle-2{
+  animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
-@media (min-width: 1024px) {
+@media only screen and (max-width: 500px) {
+  .container-home{
+ height: 30rem;
+}}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
 
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
+
+
