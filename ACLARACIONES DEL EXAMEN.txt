@@ -1,0 +1,11 @@
+# TestTuring
+Hola , este es el código final de mi test, dentro de este manejo hay y existen muchas cosas a mejorar y debido al tiempo es algo muy difícil de perfeccionar
+El código de FRONTEND está en la rama "main" y el código BACKEND está en la rama "Master"
+
+FRONTEND 
+me concentre en dejar una vista sencilla pero agradable , aplicando conocimientos HTML y CSS, aplicando el Framework VUE genere una One Single Page y un
+formulario reactivo, que enviara mediante el método POST,que registrara a contactos en una base de Datos.
+
+BACKEND 
+Genere un simple método Post que interactúa con mi base de datos en  SQL Server , usando Entity Framework Core para obtener los Modelos y aplicar el control
+
